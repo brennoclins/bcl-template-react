@@ -13,9 +13,11 @@
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major",
+    "release:publish": "npm run release && git push --follow-tags && npm publish --access public",
     "prepublishOnly": "npm run build",
     "prepare": "husky",
-    "commit": "cz"
+    "commit": "cz",
+    "release:all": "npm run build && npx tsc --noEmit && npm run release && git push --follow-tags && npm publish --access public"
   },
   "config": {
     "commitizen": {
