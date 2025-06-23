@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/brennoclins/bcl-template-react/compare/v1.1.0...v1.2.0) (2025-06-23)
+
+
+### Features
+
+* **custom:** adicionar SectionTitleBCL com alinhamento customizável ([4a4fa28](https://github.com/brennoclins/bcl-template-react/commit/4a4fa2835b094a7cc0cba4d4220af1b35eafb036))
+
 ## [1.1.0](https://github.com/brennoclins/bcl-template-react/compare/v1.0.2...v1.1.0) (2025-06-23)
 
 
