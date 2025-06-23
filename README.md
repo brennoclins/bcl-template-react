@@ -1,8 +1,8 @@
 # BCL Template React
 
-Biblioteca de componentes React com suporte a **MUI** e **TailwindCSS**, criada por [@brennoclins](https://github.com/brennoclins).  
+**Biblioteca de componentes React com suporte a MUI e TailwindCSS**, criada por [@brennoclins](https://github.com/brennoclins).
 
-Este pacote fornece componentes prontos e personalizáveis para acelerar o desenvolvimento de interfaces.
+Este pacote fornece componentes reutilizáveis, consistentes e estilizados para acelerar o desenvolvimento de interfaces modernas — começando por botões essenciais.
 
 ---
 
@@ -11,10 +11,11 @@ Este pacote fornece componentes prontos e personalizáveis para acelerar o desen
 ```bash
 npm install @brennoclins/bcl-template-react
 ```
+> Certifique-se de ter o MUI e o TailwindCSS configurados no seu projeto.
 
 ## 📦 Componentes disponíveis
 
-#### BCLButton
+#### ✅ BCLButton
 - Um botão baseado em MUI, com suporte a estilização via Tailwind.
 ```tsx
 import { BCLButton } from '@brennoclins/bcl-template-react'
@@ -28,8 +29,15 @@ import { BCLButton } from '@brennoclins/bcl-template-react'
 
 ```
 
-#### ActionButonsBCL
-- Como usar
+#### Props:
+- Todas as props padrão do <Button /> do MUI
+- tailwindClass?: string com classes utilitárias adicionais
+
+
+### ✅ ActionButtonsBCL
+
+- Conjunto de botões de ação reutilizável — como Cancelar, Salvar, Excluir — com controle dinâmico via props.
+
 ```tsx
 <ActionButtonsBCL
   actions={[
@@ -54,9 +62,14 @@ import { BCLButton } from '@brennoclins/bcl-template-react'
 />
 ```
 
-### Props:
-- Todas as props padrão do <Button /> do MUI
-- tailwindClass?: string com classes utilitárias adicionais
+#### Props:
+- actions: ActionButtonConfig[] → array de botões com:
+  - key: identificador único
+  - label: texto do botão
+  - onClick: ação do botão
+  - color?: "primary" | "success" | "info" | "error" | "warning"
+  - disabled?, hidden?, icon?, muiProps?, className?
+  - layout?: "row" | "column" → define o layout dos botões
 
 
 
