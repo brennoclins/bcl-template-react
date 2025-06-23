@@ -5,12 +5,12 @@ type SectionTitleBCLProps = {
   align?: 'left' | 'center' | 'right'
 }
 
-export const SectionTitleBCL = ({ title, align = 'center' }: SectionTitleBCLProps) => {
+export const ListSectionTitleBCL = ({ title, align = 'center' }: SectionTitleBCLProps) => {
   return (
     <>
       <Typography
-        variant="h6"
-        component="h2"
+        variant="h3"
+        component="div"
         align={align}
         sx={{
           textTransform: 'uppercase',
