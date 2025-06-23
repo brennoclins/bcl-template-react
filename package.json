@@ -1,0 +1,56 @@
+{
+ "name": "@brennoclins/bcl-template-react",
+ "version": "1.0.0",
+ "main": "dist/index.cjs",
+ "module": "dist/index.mjs",
+ "types": "dist/index.d.ts",
+ "files": [
+  "dist"
+ ],
+ "scripts": {
+  "build": "tsup src/index.ts --format cjs,esm --dts",
+  "release": "standard-version",
+  "release:patch": "standard-version --release-as patch",
+  "release:minor": "standard-version --release-as minor",
+  "release:major": "standard-version --release-as major",
+  "prepublishOnly": "npm run build"
+ },
+ "keywords": [
+  "react",
+  "component-library",
+  "mui",
+  "tailwind",
+  "design-system",
+  "ui",
+  "bcl",
+  "bcl-st",
+  "brennoclins",
+  "brenno"
+ ],
+ "author": "Brenno C. Lins",
+ "license": "ISC",
+ "description": "Biblioteca de componentes React reutilizáveis com MUI + Tailwind, iniciando com o BCLButton",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/brennoclins/bcl-template-react"
+ },
+ "homepage": "https://www.npmjs.com/package/@brennoclins/bcl-template-react",
+ "bugs": {
+  "url": "https://github.com/brennoclins/bcl-template-react/issues"
+ },
+ "dependencies": {
+  "@emotion/react": "^11.14.0",
+  "@emotion/styled": "^11.14.0",
+  "@mui/material": "^7.1.2",
+  "clsx": "^2.1.1",
+  "react": "^19.1.0",
+  "react-dom": "^19.1.0"
+ },
+ "devDependencies": {
+  "@types/react": "^19.1.8",
+  "@types/react-dom": "^19.1.6",
+  "standard-version": "^9.5.0",
+  "tsup": "^8.5.0",
+  "typescript": "^5.8.3"
+ }
+}
