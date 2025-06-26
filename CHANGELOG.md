@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/brennoclins/bcl-template-react/compare/v1.4.0...v1.5.0) (2025-06-26)
+
+
+### Features
+
+* **custom:** adiciona componente CheckboxInputBCL documentado e tipado ([a4686d4](https://github.com/brennoclins/bcl-template-react/commit/a4686d44454b6ab3273cdc96e605e49166eacbc9))
+
 ## [1.4.0](https://github.com/brennoclins/bcl-template-react/compare/v1.3.0...v1.4.0) (2025-06-26)
 
 
