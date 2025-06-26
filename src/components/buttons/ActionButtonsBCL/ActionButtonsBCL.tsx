@@ -46,14 +46,14 @@ export function ActionButtonsBCL({
     <Grid
       sx={{ borderColor: 'primary.200' }}
       className={clsx(
-        'w-full flex gap-3 items-center justify-end mt-2 p-4 rounded-lg border shadow'
+        'w-full flex gap-3 items-center justify-end p-4 rounded-lg'
       )}
     >
       <Button
         onClick={onCancel}
         sx={{ backgroundColor: (theme) => theme.palette.primary.light + '50' }}
         className={clsx(
-          'md:w-1/4 px-2 font-semibold hover:scale-105 shadow-md text-primary-darker'
+          'md:w-1/4 px-2 font-semibold hover:scale-105 shadow-md'
         )}
       >
         Cancelar
