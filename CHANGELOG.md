@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/brennoclins/bcl-template-react/compare/v1.3.0...v1.4.0) (2025-06-26)
+
+
+### Features
+
+* **custom:** cria componente SelectInputBCL com suporte a formulário controlado ([3939557](https://github.com/brennoclins/bcl-template-react/commit/39395573919f6194c75ce567317de92aae4654ac))
+
 ## [1.3.0](https://github.com/brennoclins/bcl-template-react/compare/v1.2.6...v1.3.0) (2025-06-26)
 
 
