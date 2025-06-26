@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react'
-import { Snackbar, Alert, SnackbarOrigin } from '@mui/material'
+import { Snackbar, Alert, SnackbarOrigin, useTheme, alpha } from '@mui/material'
 
 type SnackbarState = {
   open: boolean
@@ -30,6 +30,14 @@ export const SnackbarBCLProvider = ({
     setSnackbar({ open: true, message, color })
   }
 
+  const theme = useTheme()
+
+const getBackgroundColor = (color: SnackbarState['color']) => {
+  const palette = theme.palette[color] || theme.palette.info
+  return alpha(palette.main, 0.1) // suaviza o fundo com 10% de opacidade
+}
+
+
   return (
     <SnackbarContext.Provider value={showSnackbar}>
       {children}
@@ -42,7 +50,10 @@ export const SnackbarBCLProvider = ({
         <Alert
           onClose={() => setSnackbar({ ...snackbar, open: false })}
           severity={snackbar.color}
-          sx={{ width: '100%' }}
+          sx={{ 
+            width: '100%', 
+            backgroundColor: getBackgroundColor(snackbar.color) 
+          }}
         >
           {snackbar.message}
         </Alert>
