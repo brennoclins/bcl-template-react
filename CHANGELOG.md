@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/brennoclins/bcl-template-react/compare/v1.2.6...v1.3.0) (2025-06-26)
+
+
+### Features
+
+* **custom:** cria componente InputTextBCL com valores padrão e documentação JSDoc ([9be79d0](https://github.com/brennoclins/bcl-template-react/commit/9be79d03c442ceac792f16a2a6ba7620fe101cbc))
+
 ### [1.2.6](https://github.com/brennoclins/bcl-template-react/compare/v1.2.5...v1.2.6) (2025-06-26)
 
 ### [1.2.5](https://github.com/brennoclins/bcl-template-react/compare/v1.2.4...v1.2.5) (2025-06-26)
