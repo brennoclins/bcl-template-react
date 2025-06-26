@@ -34,7 +34,7 @@ export const SnackbarBCLProvider = ({
 
 const getBackgroundColor = (color: SnackbarState['color']) => {
   const palette = theme.palette[color] || theme.palette.info
-  return alpha(palette.main, 0.1) // suaviza o fundo com 10% de opacidade
+  return alpha(palette.main, 0.9) // suaviza o fundo com 90% de opacidade
 }
 
 
