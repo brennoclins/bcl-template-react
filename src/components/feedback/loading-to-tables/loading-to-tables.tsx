@@ -6,8 +6,8 @@ import { Box, LinearProgress, Skeleton } from '@mui/material'
  */
 export function LoadingToTables() {
   return (
-    <section className="relative w-full h-fit flex flex-col items-center overflow-hidden max-w-screen-lg mx-auto">
-      <div className="w-full p-2">
+    <section className="relative w-screen h-screen flex flex-col items-center overflow-hidden max-w-screen-lg mx-auto">
+      <div className="w-full h-full p-2">
         <LinearProgress color="inherit" className="h-1 mb-4" />
 
         <h1 className="font-semibold text-2xl md:text-4xl text-gray-700 mb-4">Carregando dados...</h1>
