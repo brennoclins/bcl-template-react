@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/brennoclins/bcl-template-react/compare/v1.6.0...v1.6.1) (2025-06-27)
+
+
+### Bug Fixes
+
+* **custom:** adiciona instalação do pacote @heroicons/react que havia sido esquecido ([00fd276](https://github.com/brennoclins/bcl-template-react/commit/00fd27628c5533b303fdc56418a587c851b70f62))
+
 ## [1.6.0](https://github.com/brennoclins/bcl-template-react/compare/v1.5.1...v1.6.0) (2025-06-26)
 
 
