@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/brennoclins/bcl-template-react/compare/v1.7.1...v1.8.0) (2025-07-01)
+
+
+### Features
+
+* **custom:** cria dois novos componentes para compor uma tabela ([c4c4faa](https://github.com/brennoclins/bcl-template-react/commit/c4c4faa5be49683e2e77d706e2e8571f21f1abaa))
+
 ### [1.7.1](https://github.com/brennoclins/bcl-template-react/compare/v1.7.0...v1.7.1) (2025-06-27)
 
 ## [1.7.0](https://github.com/brennoclins/bcl-template-react/compare/v1.6.1...v1.7.0) (2025-06-27)
