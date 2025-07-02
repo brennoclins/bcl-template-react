@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/brennoclins/bcl-template-react/compare/v1.8.1...v1.9.0) (2025-07-02)
+
+
+### Features
+
+* **custom:** integra TailwindCSS v4 ao Storybook com suporte completo e estrutura inicial de stories ([3e91a3a](https://github.com/brennoclins/bcl-template-react/commit/3e91a3aadb91e2309c66fe845cf1687d1bb1e8f3))
+
 ### [1.8.1](https://github.com/brennoclins/bcl-template-react/compare/v1.8.0...v1.8.1) (2025-07-01)
 
 ## [1.8.0](https://github.com/brennoclins/bcl-template-react/compare/v1.7.1...v1.8.0) (2025-07-01)
