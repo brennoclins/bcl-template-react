@@ -1,5 +1,5 @@
 
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react-vite'
 
 import { TableCell, Chip } from '@mui/material'
 import { TableBaseBCL } from './table-base'
@@ -19,6 +19,14 @@ const rows: DemoRow[] = [
 const meta: Meta<typeof TableBaseBCL<DemoRow>> = {
   title: 'BCL/Table/TableBaseBCL',
   component: TableBaseBCL,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Componente base de tabela da BCL-ST, utilizado como estrutura fundamental para renderização tabular com flexibilidade total de layout e estilo.'
+      }
+    }
+  },
+  tags: ['autodocs'],
   args: {
     headers: ['ID', 'Nome', 'Status'],
     rows,

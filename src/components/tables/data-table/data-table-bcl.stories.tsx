@@ -1,5 +1,4 @@
-import React from 'react'
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react-vite'
 import { DataTableBCL } from './data-table'
 import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/outline'
 
@@ -33,6 +32,14 @@ const rows: Fornecedor[] = [
 const meta: Meta<typeof DataTableBCL<Fornecedor>> = {
   title: 'BCL/Table/DataTableBCL',
   component: DataTableBCL,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Tabela de dados altamente configurável da BCL-ST, com suporte integrado a paginação, ordenação, cabeçalhos dinâmicos e renderização customizada de células.'
+      }
+    }
+  },
+  tags: ['autodocs'],
   args: {
     headers: ['ID', 'Nome', 'Tipo', 'Ativo', 'Grupo'],
     tableRow: ['id', 'nome', 'tipo', 'ativo', 'grupo.nome'],
@@ -46,14 +53,14 @@ const meta: Meta<typeof DataTableBCL<Fornecedor>> = {
   }
 }
 
-export const TailwindVisualTest = () => (
-  <div className="bg-emerald-100 border border-emerald-400 text-emerald-800 p-4 rounded shadow">
-    Tailwind funcionando perfeitamente 💚
-  </div>
-)
-
 
 export default meta
 type Story = StoryObj<typeof DataTableBCL<Fornecedor>>
 
 export const Default: Story = {}
+
+// export const TailwindVisualTest = () => (
+//   <div className="bg-emerald-100 border border-emerald-400 text-emerald-800 p-4 rounded shadow">
+//     Tailwind funcionando perfeitamente 💚
+//   </div>
+// )
