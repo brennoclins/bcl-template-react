@@ -35,3 +35,6 @@ Thumbs.db
 # noproject
 noproject/
 
+
+*storybook.log
+storybook-static
