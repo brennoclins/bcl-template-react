@@ -1,6 +1,6 @@
 {
   "name": "@brennoclins/bcl-template-react",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
