@@ -16,7 +16,7 @@ type FunnelTailwindMonoProps = {
 
 export const FunnelTailwindMonoBCL = ({
   stages,
-  title = 'Funil BCL',
+  title = '',
   maxWidth = 100,
   minWidth = 40,
   color = 'bg-indigo-600',
