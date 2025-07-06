@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.1](https://github.com/brennoclins/bcl-template-react/compare/v1.10.0...v1.10.1) (2025-07-06)
+
+
+### Bug Fixes
+
+* **custom:** corrigi exportação do hook useformattedDateBCL ([1f46423](https://github.com/brennoclins/bcl-template-react/commit/1f46423a4fc97f91feb9e6f7c8eeff2047e6f9de))
+
 ## [1.10.0](https://github.com/brennoclins/bcl-template-react/compare/v1.9.1...v1.10.0) (2025-07-06)
 
 
