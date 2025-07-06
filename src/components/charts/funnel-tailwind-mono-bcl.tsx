@@ -34,7 +34,12 @@ export const FunnelTailwindMonoBCL = ({
 
   return (
     <section className="flex flex-col items-center gap-2 w-full">
-      <h2 className="w-full font-semibold uppercase p-2 text-2xl md:text-3xl border-b-2 border-indigo-500">{title}</h2>
+      {title !== '' ? (
+        <h2 className="w-full font-semibold uppercase p-2 text-2xl md:text-3xl border-b-2 border-indigo-500">{title}</h2>
+      ): (
+        <span></span>
+      )}
+      
 
       {stages.map((stage, index) => {
         const isEmpty = stage.value === 0
