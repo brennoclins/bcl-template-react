@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.2](https://github.com/brennoclins/bcl-template-react/compare/v1.11.1...v1.11.2) (2025-07-06)
+
+
+### Features
+
+* **custom:** desativa titulo se for vazio ([6fd5803](https://github.com/brennoclins/bcl-template-react/commit/6fd5803bd0605776ba9bffcbc9e0510036b8f3ad))
+
 ### [1.11.1](https://github.com/brennoclins/bcl-template-react/compare/v1.11.0...v1.11.1) (2025-07-06)
 
 ## [1.11.0](https://github.com/brennoclins/bcl-template-react/compare/v1.10.2...v1.11.0) (2025-07-06)
