@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/brennoclins/bcl-template-react/compare/v1.10.2...v1.11.0) (2025-07-06)
+
+
+### Features
+
+* **custom): feat(chart:** adiciona FunnelTailwindMonoBCL com largura proporcional fixa e documentação Storybook ([c02fce7](https://github.com/brennoclins/bcl-template-react/commit/c02fce7a2e12463f2d678514fa8f38a380e20e5e))
+* **custom:** adiciona FunnelTailwindMonoBCL com largura proporcional fixa e documentação Storybook ([197aa03](https://github.com/brennoclins/bcl-template-react/commit/197aa0311be205fc48116374b1ed6d9615baa988))
+
 ### [1.10.2](https://github.com/brennoclins/bcl-template-react/compare/v1.10.1...v1.10.2) (2025-07-06)
 
 
