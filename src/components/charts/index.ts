@@ -1,0 +1,1 @@
+export * from './funnel-tailwind-mono-bcl'
