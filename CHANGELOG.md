@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/brennoclins/bcl-template-react/compare/v1.9.1...v1.10.0) (2025-07-06)
+
+
+### Features
+
+* **custom): feat(utils:** adiciona DataBCLService, hook useFormattedDateBCL e documentação Storybook/README ([7a7d2c0](https://github.com/brennoclins/bcl-template-react/commit/7a7d2c086c315fa30133d18b53321e134633c7b2))
+
 ### [1.9.1](https://github.com/brennoclins/bcl-template-react/compare/v1.9.0...v1.9.1) (2025-07-02)
 
 ## [1.9.0](https://github.com/brennoclins/bcl-template-react/compare/v1.8.1...v1.9.0) (2025-07-02)
