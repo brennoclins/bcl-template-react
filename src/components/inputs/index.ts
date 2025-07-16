@@ -1,3 +1,5 @@
 export * from './input-text-bcl'
 export * from './select-input-bcl'
 export * from './checkbox-input-bcl'
+export * from './date-input-bcl'
+export * from './number-input-bcl'
