@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/brennoclins/bcl-template-react/compare/v1.11.2...v1.12.0) (2025-07-16)
+
+
+### Features
+
+* **custom:** criação dos componentes DateInputBCL e InputNumberBCL ([d3267f3](https://github.com/brennoclins/bcl-template-react/commit/d3267f32290d74ba70d2bf1aead1ec9ad9709d02))
+
 ### [1.11.2](https://github.com/brennoclins/bcl-template-react/compare/v1.11.1...v1.11.2) (2025-07-06)
 
 
