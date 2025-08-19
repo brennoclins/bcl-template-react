@@ -1,4 +1,5 @@
 import { TextField, TextFieldProps } from '@mui/material'
+import { applyMask, MaskType } from '../../../utils/mascaras/maskUtils'
 
 /**
  * Props do componente InputTextBCL.
@@ -14,6 +15,9 @@ interface InputTextBCLProps extends Omit<TextFieldProps, 'onChange'> {
    * @param value Novo valor do campo.
    */
   onChange: (name: string, value: string) => void
+
+  // Tipo de máscara para o campo. @default 'none'
+  maskType?: MaskType
 }
 
 /**
@@ -29,8 +33,17 @@ export function InputTextBCL({
   size = 'small',
   fullWidth = true,
   variant = 'outlined',
+  maskType = 'none',
   ...rest
 }: InputTextBCLProps) {
+
+  // Máscara de entrada de texto
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const rawValue = e.target.value
+    const maskedValue = applyMask(rawValue, maskType)
+    onChange(name, maskedValue)
+  }
+
   return (
     <TextField
       {...rest}
@@ -38,7 +51,8 @@ export function InputTextBCL({
       value={value}
       error={error}
       helperText={helperText}
-      onChange={(e) => onChange(name, e.target.value)}
+      // onChange={(e) => onChange(name, e.target.value)}
+      onChange={handleChange}
       fullWidth={fullWidth}
       size={size}
       variant={variant}
