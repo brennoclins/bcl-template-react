@@ -13,10 +13,11 @@ export const applyMask = (value: string, type: MaskType): string => {
   switch (type) {
     case 'currency':
       const number = parseFloat(digits) / 100
-      return number.toLocaleString('pt-BR', {
-        // style: 'currency',
-        currency: 'BRL'
-      })
+      return number.toFixed(2).replace('.', ',')
+    //   return number.toLocaleString('pt-BR', {
+    //     style: 'currency',
+    //     currency: 'BRL'
+    //   })
 
     case 'cpf':
       return digits
