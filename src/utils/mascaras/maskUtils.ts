@@ -14,7 +14,7 @@ export const applyMask = (value: string, type: MaskType): string => {
     case 'currency':
       const number = parseFloat(digits) / 100
       return number.toLocaleString('pt-BR', {
-        style: 'currency',
+        // style: 'currency',
         currency: 'BRL'
       })
 
