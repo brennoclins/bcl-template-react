@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/brennoclins/bcl-template-react/compare/v1.12.0...v1.13.0) (2025-08-19)
+
+
+### Features
+
+* **custom:** refatora InputTextBCL para suportar máscaras ([7b41aca](https://github.com/brennoclins/bcl-template-react/commit/7b41aca4b44dbed370b2bd8983cea72e4be5c2a9))
+
 ## [1.12.0](https://github.com/brennoclins/bcl-template-react/compare/v1.11.2...v1.12.0) (2025-07-16)
 
 
