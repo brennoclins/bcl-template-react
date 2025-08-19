@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.2](https://github.com/brennoclins/bcl-template-react/compare/v1.13.1...v1.13.2) (2025-08-19)
+
+
+### Bug Fixes
+
+* **custom:** corrigi erro ao digitar valores com zero ([170526a](https://github.com/brennoclins/bcl-template-react/commit/170526a074bd5ff52791ec576dceb90f1a8c8dbb))
+
 ### [1.13.1](https://github.com/brennoclins/bcl-template-react/compare/v1.13.0...v1.13.1) (2025-08-19)
 
 ## [1.13.0](https://github.com/brennoclins/bcl-template-react/compare/v1.12.0...v1.13.0) (2025-08-19)
