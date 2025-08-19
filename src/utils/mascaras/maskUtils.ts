@@ -12,12 +12,12 @@ export const applyMask = (value: string, type: MaskType): string => {
 
   switch (type) {
     case 'currency':
-      const number = parseFloat(digits) / 100
-      return number.toFixed(2).replace('.', ',')
-    //   return number.toLocaleString('pt-BR', {
-    //     style: 'currency',
-    //     currency: 'BRL'
-    //   })
+    const number = parseFloat(digits) / 100
+    return new Intl.NumberFormat('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    }).format(number) // Ex: "1.234,56"
+
 
     case 'cpf':
       return digits
