@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.4](https://github.com/brennoclins/bcl-template-react/compare/v1.13.3...v1.13.4) (2025-08-19)
+
+
+### Bug Fixes
+
+* **custom:** remove label no select ([a2c3ee1](https://github.com/brennoclins/bcl-template-react/commit/a2c3ee12ac1be949a3c2d2789d07ac3896bad65a))
+
 ### [1.13.3](https://github.com/brennoclins/bcl-template-react/compare/v1.13.2...v1.13.3) (2025-08-19)
 
 ### [1.13.2](https://github.com/brennoclins/bcl-template-react/compare/v1.13.1...v1.13.2) (2025-08-19)
