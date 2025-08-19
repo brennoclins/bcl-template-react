@@ -6,7 +6,7 @@ import { FormControl, InputLabel, MenuItem, Select, SelectProps } from '@mui/mat
  */
 interface SelectInputBCLProps extends Omit<SelectProps, 'onChange' | 'value'> {
   /** Rótulo que será exibido acima do Select. */
-  label: string
+  label?: string
 
   /** Nome único do campo (usado na mudança de valor). */
   name: string
@@ -32,7 +32,7 @@ interface SelectInputBCLProps extends Omit<SelectProps, 'onChange' | 'value'> {
 export function SelectInputBCL({ label, name, value, options, onChange, ...rest }: SelectInputBCLProps) {
   return (
     <FormControl fullWidth>
-      <InputLabel style={{ fontWeight: 'bold' }}>{label}</InputLabel>
+      {/* <InputLabel style={{ fontWeight: 'bold' }}>{label}</InputLabel> */}
       <Select
         {...rest}
         name={name}
