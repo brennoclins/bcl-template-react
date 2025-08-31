@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/brennoclins/bcl-template-react/compare/v1.13.4...v1.15.0) (2025-08-31)
+
+
+### Features
+
+* **custom:** atualiza Input para passar para a DOM data-* ([17a8d86](https://github.com/brennoclins/bcl-template-react/commit/17a8d86b77dbd5b0c14c05b9ad04f9b5d3f7265c))
+* **custom:** implementa nova versao ([f20d05b](https://github.com/brennoclins/bcl-template-react/commit/f20d05b1bc40129e671b477609090e0824ab1e4c))
+
 ### [1.13.4](https://github.com/brennoclins/bcl-template-react/compare/v1.13.3...v1.13.4) (2025-08-19)
 
 
