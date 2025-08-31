@@ -4,6 +4,7 @@ import { applyMask, MaskType } from '../../../utils/mascaras/maskUtils'
 /**
  * Props do componente InputTextBCL.
  * Estende as props do TextField do MUI, mas sobrescreve `onChange` para aceitar `(name, value)`.
+ * Também permite o uso de atributos personalizados `data-*`, que serão aplicados diretamente no input HTML.
  */
 interface InputTextBCLProps extends Omit<TextFieldProps, 'onChange'> {
   /** Nome único do campo. Será passado como `name` no evento de mudança. */
@@ -23,6 +24,8 @@ interface InputTextBCLProps extends Omit<TextFieldProps, 'onChange'> {
 /**
  * Componente de input de texto reutilizável com integração simplificada para formulários controlados.
  * Baseado no MUI TextField e adaptado ao padrão BCL.
+ * Suporta atributos `data-*` para facilitar testes e manipulações via DOM.
+ * Compatível com a nova API `slotProps.input` do MUI.
  */
 export function InputTextBCL({
   name,
@@ -34,6 +37,7 @@ export function InputTextBCL({
   fullWidth = true,
   variant = 'outlined',
   maskType = 'none',
+  slotProps,
   ...rest
 }: InputTextBCLProps) {
 
@@ -44,6 +48,17 @@ export function InputTextBCL({
     onChange(name, maskedValue)
   }
 
+  /**
+   * Extrai todos os atributos personalizados `data-*` do restante das props.
+   * Esses atributos serão aplicados diretamente no input HTML renderizado pelo MUI.
+   */
+  const dataAttributes: Record<string, unknown> = {}
+  for (const [key, value] of Object.entries(rest as Record<string, unknown>)) {
+    if (key.startsWith('data-')) {
+      dataAttributes[key] = value
+    }
+  }
+
   return (
     <TextField
       {...rest}
@@ -51,11 +66,17 @@ export function InputTextBCL({
       value={value}
       error={error}
       helperText={helperText}
-      // onChange={(e) => onChange(name, e.target.value)}
       onChange={handleChange}
       fullWidth={fullWidth}
       size={size}
       variant={variant}
+      slotProps={{
+        ...slotProps,
+        input: {
+          ...slotProps?.input,
+          ...dataAttributes
+        }
+      }}
     />
   )
 }
