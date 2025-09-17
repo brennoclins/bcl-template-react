@@ -19,6 +19,10 @@ const getButtonConfig = (
       bg: (theme: any) => theme.palette.success.dark,
       hover: (theme: any) => theme.palette.success.main
     },
+     pagar: {
+      bg: (theme: any) => theme.palette.success.dark,
+      hover: (theme: any) => theme.palette.success.main
+    },
     editar: {
       bg: (theme: any) => theme.palette.info.dark,
       hover: (theme: any) => theme.palette.info.main
@@ -31,7 +35,7 @@ const getButtonConfig = (
 
   const colorType = {
     novo: 'novo',
-    pagar: 'novo',
+    pagar: 'pagar',
     editar: 'editar',
     atualizar: 'editar',
     excluir: 'excluir',
@@ -40,7 +44,7 @@ const getButtonConfig = (
 
   return {
     label: labels[type],
-    ...colorConfig[colorType as 'novo' | 'editar' | 'excluir']
+    ...colorConfig[colorType as 'novo' | 'pagar' | 'editar' | 'excluir']
   }
 }
 
