@@ -7,7 +7,13 @@ export interface ActionButtonsBCLProps {
   disabledDelete?: boolean
   onCancel: () => void
   onSave: () => void
-  actionType: 'novo' | 'editar' | 'excluir'
+  actionType:
+    | 'novo'
+    | 'editar'
+    | 'excluir'
+    | 'pagar'
+    | 'cancelarPagamento'
+    | 'atualizar' 
 }
 
 export type ActionConfig = {

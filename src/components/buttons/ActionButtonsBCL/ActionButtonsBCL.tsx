@@ -2,10 +2,19 @@ import { Button, Grid } from '@mui/material'
 import clsx from 'clsx'
 import { ActionButtonsBCLProps, ActionConfig } from './ActionButtonsBCL.types'
 
-const getButtonConfig = (type: 'novo' | 'editar' | 'excluir'): ActionConfig => {
-  const label = type === 'excluir' ? 'Excluir' : 'Salvar'
+const getButtonConfig = (
+  type: ActionButtonsBCLProps['actionType']
+): ActionConfig => {
+  const labels = {
+    novo: 'Salvar',
+    editar: 'Salvar',
+    excluir: 'Excluir',
+    pagar: 'Pagar',
+    atualizar: 'Atualizar',
+    cancelarPagamento: 'Cancelar Pagamento'
+  }
 
-  const config = {
+  const colorConfig = {
     novo: {
       bg: (theme: any) => theme.palette.success.dark,
       hover: (theme: any) => theme.palette.success.main
@@ -20,9 +29,18 @@ const getButtonConfig = (type: 'novo' | 'editar' | 'excluir'): ActionConfig => {
     }
   }
 
+  const colorType = {
+    novo: 'novo',
+    pagar: 'novo',
+    editar: 'editar',
+    atualizar: 'editar',
+    excluir: 'excluir',
+    cancelarPagamento: 'excluir'
+  }[type]
+
   return {
-    label,
-    ...config[type]
+    label: labels[type],
+    ...colorConfig[colorType as 'novo' | 'editar' | 'excluir']
   }
 }
 
@@ -36,8 +54,11 @@ export function ActionButtonsBCL({
 }: ActionButtonsBCLProps) {
   const isDisabled = {
     novo: disabledNew,
+    pagar: disabledNew,
     editar: disabledEdit,
-    excluir: disabledDelete
+    atualizar: disabledEdit,
+    excluir: disabledDelete,
+    cancelarPagamento: disabledDelete
   }[actionType]
 
   const config = getButtonConfig(actionType)
