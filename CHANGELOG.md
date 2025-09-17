@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/brennoclins/bcl-template-react/compare/v1.16.0...v1.17.0) (2025-09-17)
+
+
+### Features
+
+* **custom:** implementa nova label Pagar ([83e9525](https://github.com/brennoclins/bcl-template-react/commit/83e9525674645d68c229f3c1d012d24de6dad4df))
+
 ## [1.16.0](https://github.com/brennoclins/bcl-template-react/compare/v1.15.0...v1.16.0) (2025-09-17)
 
 
