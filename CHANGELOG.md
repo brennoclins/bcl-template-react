@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/brennoclins/bcl-template-react/compare/v1.15.0...v1.16.0) (2025-09-17)
+
+
+### Features
+
+* **custom): feat(ActionButtonsBCL:** adiciona novas opções de labels para ações ([5e45b30](https://github.com/brennoclins/bcl-template-react/commit/5e45b30c4a2365e6503c5f9f812c3e8215651456))
+
 ## [1.15.0](https://github.com/brennoclins/bcl-template-react/compare/v1.13.4...v1.15.0) (2025-08-31)
 
 
