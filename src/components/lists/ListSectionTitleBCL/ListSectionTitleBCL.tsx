@@ -3,18 +3,22 @@ import { Divider, Typography } from '@mui/material'
 type SectionTitleBCLProps = {
   title: string
   align?: 'left' | 'center' | 'right'
+  borderBackgroundColor?: string
+  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'subtitle1' | 'subtitle2' | 'body1' | 'body2' | 'button' | 'caption' | 'overline' | undefined
+  padding?: number
+  textTransform?: 'capitalize' | 'uppercase' | 'lowercase' | 'none' | undefined
 }
 
-export const ListSectionTitleBCL = ({ title, align = 'center' }: SectionTitleBCLProps) => {
+export const ListSectionTitleBCL = ({ title, align = 'center', borderBackgroundColor = 'primary.400', variant = 'h4', padding = 1, textTransform = 'none'}: SectionTitleBCLProps) => {
   return (
     <>
       <Typography
-        variant="h3"
+        variant={variant}
         component="div"
         align={align}
-        padding={2}
+        padding={padding}
         sx={{
-          textTransform: 'uppercase',
+          textTransform: textTransform,
           // fontWeight: 'bold',
           // pb: 1
         }}
@@ -24,12 +28,9 @@ export const ListSectionTitleBCL = ({ title, align = 'center' }: SectionTitleBCL
 
       <Divider
         sx={{
-          backgroundColor: 'primary.400',
+          backgroundColor: borderBackgroundColor,
           color: 'primary.contrastText',
           p: 0.2
-          // height: 3,
-          // mx: align === 'center' ? 'auto' : 0,
-          // width: align === 'center' ? '60%' : '100%'
         }}
       />
     </>
