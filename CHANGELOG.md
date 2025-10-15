@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.18.0](https://github.com/brennoclins/bcl-template-react/compare/v1.17.0...v1.18.0) (2025-10-15)
+
+
+### Features
+
+* **custom:** adds new properties to the ListSectionTitleBCL component, making it more flexible ([0e6ff3d](https://github.com/brennoclins/bcl-template-react/commit/0e6ff3d061334299e268874a2452092af240fda2))
+
 ## [1.17.0](https://github.com/brennoclins/bcl-template-react/compare/v1.16.0...v1.17.0) (2025-09-17)
 
 
