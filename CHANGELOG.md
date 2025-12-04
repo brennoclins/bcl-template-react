@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/brennoclins/bcl-template-react/compare/v1.18.0...v1.19.0) (2025-12-04)
+
+
+### Features
+
+* **custom:** updates masks to avoid displaying NaN and allows entering negative values. ([6d793ef](https://github.com/brennoclins/bcl-template-react/commit/6d793efe7fc00d6dca9227b1fe73907460f3a064))
+
 ## [1.18.0](https://github.com/brennoclins/bcl-template-react/compare/v1.17.0...v1.18.0) (2025-10-15)
 
 
