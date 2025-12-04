@@ -11,12 +11,23 @@ export const applyMask = (value: string, type: MaskType): string => {
   const digits = value.replace(/\D/g, '')
 
   switch (type) {
-    case 'currency':
-    const number = parseFloat(digits) / 100
-    return new Intl.NumberFormat('pt-BR', {
+    case 'currency': {
+      // Preservar o sinal de menos se existir
+      const isNegative = value.startsWith('-')
+      const digitsOnly = value.replace(/\D/g, '')
+
+      // Se não houver dígitos, retornar string vazia ou apenas '-' se o usuário digitou
+      if (digitsOnly === '') return isNegative ? '-' : ''
+
+      const number = parseFloat(digitsOnly) / 100
+      const formatted = new Intl.NumberFormat('pt-BR', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
-    }).format(number) // Ex: "1.234,56"
+      }).format(number)
+
+      // Retornar com sinal negativo se necessário
+      return isNegative ? `-${formatted}` : formatted
+    }
 
 
     case 'cpf':
@@ -39,8 +50,8 @@ export const applyMask = (value: string, type: MaskType): string => {
         .replace(/^(\d{2})(\d)/, '($1) $2')
         .replace(/(\d{5})(\d)/, '$1-$2')
         .slice(0, 15)
-    
-     case 'cep':
+
+    case 'cep':
       return digits
         .replace(/^(\d{5})(\d)/, '$1-$2')
         .slice(0, 9)
